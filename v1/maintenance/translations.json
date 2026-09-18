@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "sourceLanguage": "zh-Hans",
+  "targetLanguage": "en",
+  "vectorsSha256": "c5267cda08ffefece463111c7a5cd62a907f2cd5f88f166d3e206725a667c8e8",
+  "documents": {
+    "client-relay/channels/concepts/model-and-timeline.md": {
+      "sourceSha256": "e8feec939f2983c2f0f0dd43d2731d2368e9b3566d9fab9fdf229d235f4774da",
+      "translationSha256": "098c8acbf4d3a9e4374986ec293f057493bea7465776b9538571fe3f9b14b26e",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/channels/core-objects.md": {
+      "sourceSha256": "9436b1ec8136ed8b7bc84fc4d6bc5690334b0244868b26ad8bb0725d19cc9146",
+      "translationSha256": "abe9ed7ee082764bc585bc9c6552cd82bb243214b8047433cddf8b066f3c3ae0",
+      "reviewedAt": "2026-09-18"
+    },
+    "client-relay/channels/methods/channel-management.md": {
+      "sourceSha256": "1de6b5b83347ff0f4e1366ecec8d63ba53ad10e1e69ac303b4e76b4ff2957e92",
+      "translationSha256": "ba1eac31e133d866730dbf33374308d9d249ba5ae724a21f4837f08d11f1035f",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/channels/methods/subscription.md": {
+      "sourceSha256": "d03817ba5e6ca77c9ea86748dc3d3dea6a4c1d86b1033434c1c4049808e1f5c2",
+      "translationSha256": "641c80768809e296d00835c801a8c8e64a4845c2242f55ab75fd4f9e23e51842",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/channels/methods/timeline.md": {
+      "sourceSha256": "49d482999a923a7bc000e187a7bbf52bb2a3f7ffc049d7c0f11c641dbc850c26",
+      "translationSha256": "47902a21f08cb1f778c4cf01c74ba75802c551b707c4329ed6b89221c92f7486",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/channels/notifications/README.md": {
+      "sourceSha256": "34318455730aefe4ec95f2f288fa7ac2477139b648bf46001ae1f62f43742539",
+      "translationSha256": "f8ed2c35419ea8d4ddfca7323f7a008d6d764b4a82a2e371a8397eb7f1b17165",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/channels/README.md": {
+      "sourceSha256": "a8ee1bb9dec990ced8e4c87730a3ae7d15dead24058dc970850c882d1aa3e86d",
+      "translationSha256": "63d1894f2455ee8fe7093cd72fcfadad8de7ec3356883bbac4ecbff987bd34a0",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/concepts/account-and-device-lifecycle.md": {
+      "sourceSha256": "e68cb361abe1dd4fe53fbdefbbe7f02af662af37d3ce09a88d946d6e0543228b",
+      "translationSha256": "a54f6a6f95349e15de364a67709fec54b1e39ddc5330bf2a7939729bec45713c",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/concepts/contacts.md": {
+      "sourceSha256": "bb7848602a24c1d527b19c9ebb45715e09b827fc41e40885223bd34657c55fe6",
+      "translationSha256": "780662cb61180cd2de67ee8ef6222f4de2ac5ec2f6270b35818d49d5f1eedaff",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/concepts/discovery-and-sessions.md": {
+      "sourceSha256": "de4be9bb4e80198ab9e9e0170a04afe8103e7868672d15aa62bcbdd572971de9",
+      "translationSha256": "394737f1df13ec043023932037fa1272f41331957fe8edd440e073057f6bc251",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/concepts/message-delivery.md": {
+      "sourceSha256": "605ff7a39acc3a49d57955b00d6613953d54fe2eafc9bac57d0d679a172aa9c6",
+      "translationSha256": "2665a281a943bd62a24e018c1cbe30ba638e79a8565d160bf6ddb3595bb5aa7a",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/concepts/message-timeline.md": {
+      "sourceSha256": "1202023f8de0898a54c5f9a51da47ecb28063d18c0d0070fc924268dd444afb0",
+      "translationSha256": "ecbc7bc175c94622291414ba252b6e994b219390688c7eba82a463686f47e6df",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/concepts/roles-and-routing.md": {
+      "sourceSha256": "9566ea18ca56f54623af0a3bb26872331cf485b18ff8c67ea23f5efbe76556eb",
+      "translationSha256": "af78aca70684cc7d2e7ea37d169f172d18c355d4a140b04e8e1b782fb3738b24",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/core-objects/accounts-and-devices.md": {
+      "sourceSha256": "8908e09a90bf2667417b8a62e73b64cb19f074241ef60082cb6fbba2076af5ea",
+      "translationSha256": "7358a914c205fa4f2a4d6524fc2d127a317849c694960c27d4b17157f3e92cbf",
+      "reviewedAt": "2026-09-18"
+    },
+    "client-relay/core-objects/messages-and-content.md": {
+      "sourceSha256": "4bb7de0cf517697138b830b3ced95a5e21fd06f4dedb404a3c7dbdb29f030b69",
+      "translationSha256": "2289b7c6acab9b4ceeb50e09202645ad592795e04cc95efb95530d7b08a06115",
+      "reviewedAt": "2026-09-18"
+    },
+    "client-relay/core-objects/README.md": {
+      "sourceSha256": "f5f6c3e2efc98a5aba340fbc592185f8841b4d48ef7f59c29a0398d5bbdf4e83",
+      "translationSha256": "d2d4f344f3f8723de978ed7169135b1e5973b790dda0e6762879716004a8fe81",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/core-objects/relay-descriptor.md": {
+      "sourceSha256": "fafc8e22521a1cbca36956329141629d522df8b7f1743906a77097144e7f831d",
+      "translationSha256": "bd93989542c9105c45bcfd3324e4d33333bcb82c5b6520cc765feb232b3a81a8",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/concepts/account-sync.md": {
+      "sourceSha256": "6a4d391910531ff181569a3ccf5f29cec36597e157db65200ac675ca93743cb2",
+      "translationSha256": "c04651b2be5e7c2f229b973a85f6c265108a62d886d8e0f0f18e6be7337a1078",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/concepts/membership-and-access.md": {
+      "sourceSha256": "255f2aecdff6bf782cd73dfec525e158e5fc065ff446d783f83bd4b10eb7aa7f",
+      "translationSha256": "60226187db6a7f55e65d6bf8d9575f89ae8bc9bd709169b7ef0002fd1890ebc6",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/concepts/messaging-and-encryption.md": {
+      "sourceSha256": "c7deddcb50b37c06139e8a19f6962c6ac43716af54fb60608623b4fc93909633",
+      "translationSha256": "df8fa6a3a835dd4648ec9324728fa7be0b641f53144dee0aad0dd8c25ca72440",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/concepts/model-and-keys.md": {
+      "sourceSha256": "317258975f9d0fc91a824c347061037447cf96eff04f4299d7dcf0e688d133c8",
+      "translationSha256": "0e157b3253de57dfcdf48079cebc98c69c042039975caf19a036f62451a2b7a9",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/concepts/timeline-and-sync.md": {
+      "sourceSha256": "769292bc83fd4c472666005b25c8a2a7c4d0f33af921877bfa4d8ebc5d7e43b8",
+      "translationSha256": "870782875aa09b46b1fcaa5f31db6de4a3b695d893b97e42bb6801b49c770b87",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/core-objects.md": {
+      "sourceSha256": "528d257b0d04613ecb565fef473a9a371b8eb8b85b1a553bf05e2adfe3048d33",
+      "translationSha256": "0b4e7801a454fa1120f4ec44b93e1fde6f4260dedb21587f1f0f6ef5c0729aa4",
+      "reviewedAt": "2026-09-18"
+    },
+    "client-relay/groups/methods/admission.md": {
+      "sourceSha256": "45c0c0e98cbc1a0cd3e7473a2ded4a5f92141827c4f0ac3923ffd5a04788ebcf",
+      "translationSha256": "043c7b353df19a81802971dde26ec96af45b0c723a90395448eea65aa1f3b0a5",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/methods/conventions.md": {
+      "sourceSha256": "e102759f49f0d2d5918a7492c87790c3f9ababf965fe6f898d5c61ece37ed935",
+      "translationSha256": "d8b4e3b1ec9f55a65c35db7cca1af064abc41102d5de27736e762f20f4aba103",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/methods/keys.md": {
+      "sourceSha256": "3eec413939165deec7352661e48cc6eae2ec05b83f5809449bf39d60423ef178",
+      "translationSha256": "aa95c2dd1ecbf4c7b58ba974d8fb3f01606c24f9454ddb2bc6c2b5ba81eef9e1",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/methods/lifecycle-and-sync.md": {
+      "sourceSha256": "45e159adaa2f21b9bbeecf21e570e02f7a1d71e3cb10e0e46e45dea721fef145",
+      "translationSha256": "042d8c4ee9ee2ea72e19fc51e727e4d0a0e96cfc762c6c232fc7eb4df42ac600",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/methods/member-recovery.md": {
+      "sourceSha256": "2a9d39043da1bab1cee0fd186be3e80d988b6b153c6f0f97061afb8f508d4ea7",
+      "translationSha256": "0736eb7230dd42d4bf5e4d5fa70ccecdd0749d0d066fdf0ff3d08627b79205ae",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/methods/members-and-bans.md": {
+      "sourceSha256": "5ac18810e5bdfa18ea1423ac585b5947ef5549b4f3acdb454b679e11b24ec078",
+      "translationSha256": "4d4285bfb45dcb9d8cac65da584b535328b016966f36bca352259d8b3bbc267a",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/methods/messaging.md": {
+      "sourceSha256": "ba55243795dc850101e55c13a226b8697213a1c13fc76bc81492f255502e2dc4",
+      "translationSha256": "e8a193963abb0193de10b201fe89e0b5ed7db8c8dab7673ff6c2a29f7b34072c",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/methods/properties-and-roles.md": {
+      "sourceSha256": "340dbb5dbdafb46c4ded8fa9cf90d4e24d4444df64f9c280261bb8ef91070c6e",
+      "translationSha256": "290e0ea437c5eeea59794c0b42ee0847c77c8789646a4748491b6410de486040",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/methods/subscription.md": {
+      "sourceSha256": "8a72cc1472902736faabf6409cb1b1f9bb6da1d7ce0c7d2837f835e5c45cee94",
+      "translationSha256": "33d92bfead8410e1e4693d6ae70af8c9df7cf708648c034ac6cd98d3d8c05bfe",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/notifications/README.md": {
+      "sourceSha256": "384cdee35ce8ef1fef69c79a549c9d9b52f1ba1fab71451ebaad04ae4922d471",
+      "translationSha256": "b137f43f2249d7f9df3a642f542ef0c837bbdb3053229631a7bd2bdbe2096cdd",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/groups/README.md": {
+      "sourceSha256": "e58f3df153459d3deb1052fb244a9d0fdd8d40e835975bc51e180750ce06a1e4",
+      "translationSha256": "4e5910f91a3227ea4f2a3bb4365811a875373f5ac414f32b9502882803bdc0d2",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/methods/account-routing.md": {
+      "sourceSha256": "8b478c55c070f74fc6f0cc5623ad646bab7e89e8c4e02080dc9f5f436a8ab960",
+      "translationSha256": "14055c32c5d3d18e3090b7311f1eb63719b9c1c652e9111a4290da5e24488294",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/methods/authentication-and-sessions.md": {
+      "sourceSha256": "998106a17187492f572ede4d63ed981e83474860920334d97a35c488cc206720",
+      "translationSha256": "00894548a179844c2d8a076e078c40cbd4ff6985e697041f68a3a3d7d267f659",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/methods/conventions.md": {
+      "sourceSha256": "63bd054bfed06dcbc9ef38682f781526db070636a3a6d585bf3ca45697876120",
+      "translationSha256": "218866c058f4e1fb04871d57b581929178103297962ec7c74ea66849f9f364f3",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/methods/device-state.md": {
+      "sourceSha256": "aa23289db480363faf0adf871bc35476839ba699b5517c3a261565e40ceca88c",
+      "translationSha256": "341b507dfd09a06f7bc1011eae294c6bfbe778504b90a845cc9e76cbf8f91399",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/methods/messaging.md": {
+      "sourceSha256": "6ad5752a5605b2c3610410fc6fb4bcbd31ec5abdc29892111eff174b3162324a",
+      "translationSha256": "174053a94f9fb18c927dc8dabf71a5c6d06e8ba1613d055e1b4bb18cbe0eebe3",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/methods/profiles.md": {
+      "sourceSha256": "f50addaec18094a8e654c2ac7cc60de2b426a12829243ce8c19e7c5fe8fb2508",
+      "translationSha256": "bdef6d1b15f3700758ad0361b94235b196db6b01cdceac573ba3fbf9a1cf2bfa",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/methods/relay-information.md": {
+      "sourceSha256": "152099aecb51aa851b4f2879bf731ea123c352477280559a53da312b2ee37d06",
+      "translationSha256": "b81622bd69cdb1426fc8884c339a818d7df2154b69beab1464214986b1333648",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/notifications/README.md": {
+      "sourceSha256": "af30e5e7a77dbc50e941a2181b75e43f4fd515690f886384bfd1fdbf985cc7f5",
+      "translationSha256": "1de82e26754b4b76ecfc4fcbe423304b3f2957f1df71d02f86950e160510f177",
+      "reviewedAt": "2026-09-17"
+    },
+    "client-relay/README.md": {
+      "sourceSha256": "24366583953e553c66b857d28d9cab540454073f4e8f0ea8dfc74a34b39179bd",
+      "translationSha256": "458d8d828f07a95192660bf67df6e5d71e4a9d1c99c1b7948bf62df0493792f3",
+      "reviewedAt": "2026-09-17"
+    },
+    "general.md": {
+      "sourceSha256": "44997b29ab1e91352844e745f0ff9e0c32d48215bdb934666139357d2fa2c3bb",
+      "translationSha256": "a70489e17d74997b4507d959b3f965f722d34cc21930765c69863d237368e41b",
+      "reviewedAt": "2026-09-18"
+    },
+    "README.md": {
+      "sourceSha256": "5dbf3876f189359839b8b07b0ab3a89c7c75b0f832db47ca29ee135dbde03319",
+      "translationSha256": "91433c5afb8f763590bc8bdcebc8bd19f6eb69da510fc4fd53b5a6bd8baece88",
+      "reviewedAt": "2026-09-17"
+    },
+    "registry/core-objects.md": {
+      "sourceSha256": "dee14bdbc3de75beecd64a9d0ca08ad49c0f1e943ac0fbf2c43458792e085d37",
+      "translationSha256": "b1642d11255855f9446c3371d766f3fa411b211701efbbcfc5ec16c0c1a768d7",
+      "reviewedAt": "2026-09-17"
+    },
+    "registry/methods.md": {
+      "sourceSha256": "7ac3ee6db442f8b7d5ea6bf1da9c5aa8807ba110f7f2c257cccbb158c7ec8580",
+      "translationSha256": "5b69869d9484d73dc1b42c8185658d33e5f836b839778b5ad0e46f3f2fbc2f52",
+      "reviewedAt": "2026-09-17"
+    },
+    "registry/README.md": {
+      "sourceSha256": "6cfec7f1b674acca83f48a1121bd348460fcf1bdedc7294edd6aff30a2440d70",
+      "translationSha256": "ed8c54131e01323f6e581b08304338792632c8da096d1cb0d2f69a060f1f3bea",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-dht/concepts/account-route-lifecycle.md": {
+      "sourceSha256": "c32045aa771c35f25e462f4b9f30f9ad93f77e63f58dee2b9ff5f73b274e65ed",
+      "translationSha256": "393e17692dab4b0d80f1eb0cc65eaec8a5dc2df61f01211a6736d64955b4db32",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-dht/concepts/connection-and-authentication.md": {
+      "sourceSha256": "0490e3982b340b367fd7c3210bf3a8decd4304724d1d658fef85d51200d01c15",
+      "translationSha256": "f4fd2ca0dc1874603e513a9bd2b8ce364604f3f8af4fc7f16d819bb96f790bf8",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-dht/concepts/overlay-and-maintenance.md": {
+      "sourceSha256": "6de92bfa4315f4266f72756f074ed7d42e05829cad3976c1649fa20807b17759",
+      "translationSha256": "540a167b371f3de3a80f62d9ab8963e338b7bc2cf29171b1505715042285b9a5",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-dht/core-objects.md": {
+      "sourceSha256": "4d3cc10aeefb408cc979bfa58f14a3405cabcc504298ef7adac7c2904695117f",
+      "translationSha256": "6a5d06342d4cd388e07476d42d03c9a91d8e63624563459668d32ba64dfd813b",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-dht/message-format.md": {
+      "sourceSha256": "2716ed6f0e1483a4a530ca5a44cb2a0f728f8b8f1becbc728f66026508b4185a",
+      "translationSha256": "4df48ce9d13174cae63a8cba0d84845dcd455f210f92d22a34db36fa127479d4",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-dht/operations.md": {
+      "sourceSha256": "eb2f288b9c3db6c6f757daea002643c55f627dffa8861090eb9a310bc55e3504",
+      "translationSha256": "28141ac62b58d083e27201e653e82e5366e0a78ab05c345714302d18b5288982",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-dht/README.md": {
+      "sourceSha256": "3d67784af21d00d73ea5c8ac34725af18a4217bda3bb09278afbb522bb6500c9",
+      "translationSha256": "4e7aded3edf53aa17a8a979839b92dec89f387880aa4ee11d35a81ca409c1899",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-rpc/methods/account-queries.md": {
+      "sourceSha256": "e06326abd96f4a411efb0dd4cb7e2f0e1c7533f1fb5dddb2bd0ef7d81f70b2f2",
+      "translationSha256": "1deed7a304f317561721a310db28501d4ed2f68dbe8a26f46df13a743e0362cd",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-rpc/methods/conventions.md": {
+      "sourceSha256": "48b465e854b7b39b70a29c073e8029fe4cba4d14e4ae7540a41c47b6113af361",
+      "translationSha256": "9a6acde7c74023226b1a5fb92c73d349263ab67b2246b5ae7e0d262ceb8612ed",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-rpc/methods/message-delivery.md": {
+      "sourceSha256": "472753ab3d20a6ca163809eef29c3c32f43426a333056c4f6dbb5df51523d81f",
+      "translationSha256": "e8c0385706fd707cd942a8d2c44f523ffbbe03f7eae379ff9b87119b283ed305",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-rpc/notifications/README.md": {
+      "sourceSha256": "11bc3adba6f6566ca7ce37b0f7446029310fe2b54fa20e31f6922f9a6ab76358",
+      "translationSha256": "84ef3ece3cbb46b1e5ae95e092dd2c183187044e9ca24424ef6ab5725721fbb2",
+      "reviewedAt": "2026-09-17"
+    },
+    "relay-rpc/README.md": {
+      "sourceSha256": "47675cb00b144fa6aba8c52d8e8c77ee77f0d0848f2b875ffcc0d3c1501de4fa",
+      "translationSha256": "823333924c9d6c077d99a56c4f9a6898ecae48d828e8988720f56cf8b349160b",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/channels.md": {
+      "sourceSha256": "c441d78c4c979439f9a9e98ca8dd262e9301e4871473d4147e20767cf8491b59",
+      "translationSha256": "d8cda23fb4a78f7e5c97574913f45450fa1d298eeb4f8255e0f97a2abadfba3d",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/common.md": {
+      "sourceSha256": "54d7edca31d62bdc1a554da588952b682fe98b4ef78c127537050e028a2e682c",
+      "translationSha256": "7ce9a0c713c0c25692eae3483e2a79943a2820e1200010b182e6171348fc4cff",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/contacts.md": {
+      "sourceSha256": "38c3e53e12cffc3a9b35fded820b196bb452d8f597acef4a4bff3bd63ef6f0d2",
+      "translationSha256": "cc1efc280d78cc8b18daed459d76ad26895db68ff1474d8d3d021f4c64e39fef",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/dht-keyspace.md": {
+      "sourceSha256": "8a8694a2e950935549f3123d5e4616356d40a820e9a071d35735e93d8a1825a9",
+      "translationSha256": "6d12725d592a19a4546d856f22b2dc4e97a84a7294e1b9578634ea8529427782",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/groups.md": {
+      "sourceSha256": "4ddae7ce98e181a529574433c65d1b288b7bf6838286d772e9fcbe25df4720f6",
+      "translationSha256": "926d99976ed3d45571be5ac87289248f0a255863be18984573cb21324429d304",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/identity-auth.md": {
+      "sourceSha256": "f615072f77a871bc5b2ed20262e995fa63b382f1012c7280d093c022196bd2ce",
+      "translationSha256": "b9df12cf4f30ab5888f6584b5b37150feb24a0fa15deb325342531e5fb77d62d",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/message-content.md": {
+      "sourceSha256": "a6e607a45ee28117fcf132d570ff3a51ac1d356acca4690db64383aa5267ad7e",
+      "translationSha256": "ac5a08bf7ad640dd5457f339597f5bb40c001b6aa68b0f648cef43826ddbc2f9",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/message-encryption.md": {
+      "sourceSha256": "28ae8e1ae576058415768c3f28a97a46988f9d172a76892fac0a045f5c33f486",
+      "translationSha256": "ada6548751016d39432c10ad81a7acf623815644eaa8f39b43f15a3d83e15535",
+      "reviewedAt": "2026-09-17"
+    },
+    "test-vectors/README.md": {
+      "sourceSha256": "82732a30e0e9477093326c4eefc748f921af57d241b668399de9653b57792782",
+      "translationSha256": "5557ece8dc066c1d92f49c0bc556519394387d722dc3a28ecf47435ff0e2647e",
+      "reviewedAt": "2026-09-17"
+    }
+  }
+}

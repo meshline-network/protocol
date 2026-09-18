@@ -1,0 +1,120 @@
+{
+  "$type": "meshline.protocol.test-vectors",
+  "protocol_version": "1.0",
+  "network_context": "neo:860833102:0x5979ba79431672a38a18a32cdc48fd7317818b70",
+  "resource_key": {
+    "id": "account-route-dht-key-v1",
+    "operation": "dht_resource_key",
+    "input": {
+      "$type": "meshline.dht.resource.account.route",
+      "resource_id": "neo:860833102:NUz6PKTAM7NbPJzkKJFNay3VckQtcDkgWo"
+    },
+    "expected": {
+      "canonical_json": "{\"$context\":\"neo:860833102:0x5979ba79431672a38a18a32cdc48fd7317818b70\",\"$type\":\"meshline.dht.resource.account.route\",\"resource_id\":\"neo:860833102:NUz6PKTAM7NbPJzkKJFNay3VckQtcDkgWo\"}",
+      "utf8_hex": "7b2224636f6e74657874223a226e656f3a3836303833333130323a307835393739626137393433313637326133386131386133326364633438666437333137383138623730222c222474797065223a226d6573686c696e652e6468742e7265736f757263652e6163636f756e742e726f757465222c227265736f757263655f6964223a226e656f3a3836303833333130323a4e557a36504b54414d374e62504a7a6b4b4a464e61793356636b517463446b67576f227d",
+      "utf8_base64": "eyIkY29udGV4dCI6Im5lbzo4NjA4MzMxMDI6MHg1OTc5YmE3OTQzMTY3MmEzOGExOGEzMmNkYzQ4ZmQ3MzE3ODE4YjcwIiwiJHR5cGUiOiJtZXNobGluZS5kaHQucmVzb3VyY2UuYWNjb3VudC5yb3V0ZSIsInJlc291cmNlX2lkIjoibmVvOjg2MDgzMzEwMjpOVXo2UEtUQU03TmJQSnprS0pGTmF5M1Zja1F0Y0RrZ1dvIn0=",
+      "sha256_hex": "b1b429fe49c9bc96bb2d30b6a904e9c49630f28492583ba8732129c797410938",
+      "sha256_base64url": "sbQp_knJvJa7LTC2qQTpxJYw8oSSWDuocyEpx5dBCTg",
+      "expected_key_hex": "b1b429fe49c9bc96bb2d30b6a904e9c49630f28492583ba8732129c797410938",
+      "expected_key_base64url": "sbQp_knJvJa7LTC2qQTpxJYw8oSSWDuocyEpx5dBCTg"
+    }
+  },
+  "keyspace": {
+    "sources": [
+      "https://github.com/libp2p/specs/blob/master/peer-ids/peer-ids.md#peer-ids",
+      "https://github.com/libp2p/specs/blob/master/kad-dht/README.md#distance",
+      "https://github.com/libp2p/specs/blob/master/kad-dht/README.md#rpc-messages"
+    ],
+    "peers": [
+      {
+        "id": "sha256_peer",
+        "peer_id": "QmYyQSo1c1Ym7orWxLYvCrM2EmxFTANf8wXmmE7DWjhx5N",
+        "bytes_hex": "12209dff3b17d74cf4d38a50d8b6383e92d181a10395a5e73a726dcccbd21bf6f0b9",
+        "byte_length": 34,
+        "keyspace_hex": "e41c99e231bc8c569bdbb2bb67fd760a2bd41b44cf8910ec7a93aefc14031896"
+      },
+      {
+        "id": "ed25519_peer",
+        "peer_id": "12D3KooWD3eckifWpRn9wQpMG9R9hX3sD158z7EqHWmweQAJU5SA",
+        "bytes_hex": "0024080112202ffa35a99d3a3cfbb17bb7c1dc5561b18a8dcca4df38dc613ea859c37eb1336b",
+        "byte_length": 38,
+        "keyspace_hex": "a9fb3b592b9e6cee5658eaf7de67433434163a081d97cc77e303b300c816251e"
+      }
+    ],
+    "cases": [
+      {
+        "id": "sha256_peer",
+        "key_source": {
+          "peer": "sha256_peer"
+        },
+        "key_hex": "12209dff3b17d74cf4d38a50d8b6383e92d181a10395a5e73a726dcccbd21bf6f0b9",
+        "expected": {
+          "key_byte_length": 34,
+          "target_position_hex": "e41c99e231bc8c569bdbb2bb67fd760a2bd41b44cf8910ec7a93aefc14031896",
+          "find_node_request_hex": "0804122212209dff3b17d74cf4d38a50d8b6383e92d181a10395a5e73a726dcccbd21bf6f0b9",
+          "framed_request_hex": "260804122212209dff3b17d74cf4d38a50d8b6383e92d181a10395a5e73a726dcccbd21bf6f0b9",
+          "response_key_hex": "12209dff3b17d74cf4d38a50d8b6383e92d181a10395a5e73a726dcccbd21bf6f0b9",
+          "distances": [
+            {
+              "peer": "sha256_peer",
+              "xor_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "peer": "ed25519_peer",
+              "xor_hex": "4de7a2bb1a22e0b8cd83584cb99a353e1fc2214cd21edc9b99901dfcdc153d88"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ed25519_peer",
+        "key_source": {
+          "peer": "ed25519_peer"
+        },
+        "key_hex": "0024080112202ffa35a99d3a3cfbb17bb7c1dc5561b18a8dcca4df38dc613ea859c37eb1336b",
+        "expected": {
+          "key_byte_length": 38,
+          "target_position_hex": "a9fb3b592b9e6cee5658eaf7de67433434163a081d97cc77e303b300c816251e",
+          "find_node_request_hex": "080412260024080112202ffa35a99d3a3cfbb17bb7c1dc5561b18a8dcca4df38dc613ea859c37eb1336b",
+          "framed_request_hex": "2a080412260024080112202ffa35a99d3a3cfbb17bb7c1dc5561b18a8dcca4df38dc613ea859c37eb1336b",
+          "response_key_hex": "0024080112202ffa35a99d3a3cfbb17bb7c1dc5561b18a8dcca4df38dc613ea859c37eb1336b",
+          "distances": [
+            {
+              "peer": "sha256_peer",
+              "xor_hex": "4de7a2bb1a22e0b8cd83584cb99a353e1fc2214cd21edc9b99901dfcdc153d88"
+            },
+            {
+              "peer": "ed25519_peer",
+              "xor_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ]
+        }
+      },
+      {
+        "id": "account_route",
+        "key_source": {
+          "vector_id": "account-route-dht-key-v1",
+          "value_ref": "/resource_key/expected/expected_key_hex"
+        },
+        "key_hex": "b1b429fe49c9bc96bb2d30b6a904e9c49630f28492583ba8732129c797410938",
+        "expected": {
+          "key_byte_length": 32,
+          "target_position_hex": "b64b73075186b52f8ce2c88ceb512448f2798cd6baea1ff8fe5709aca7d6ec45",
+          "find_node_request_hex": "08041220b1b429fe49c9bc96bb2d30b6a904e9c49630f28492583ba8732129c797410938",
+          "framed_request_hex": "2408041220b1b429fe49c9bc96bb2d30b6a904e9c49630f28492583ba8732129c797410938",
+          "response_key_hex": "b1b429fe49c9bc96bb2d30b6a904e9c49630f28492583ba8732129c797410938",
+          "distances": [
+            {
+              "peer": "sha256_peer",
+              "xor_hex": "5257eae5603a397917397a378cac5242d9ad979275630f1484c4a750b3d5f4d3"
+            },
+            {
+              "peer": "ed25519_peer",
+              "xor_hex": "1fb0485e7a18d9c1daba227b3536677cc66fb6dea77dd38f1d54baac6fc0c95b"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
