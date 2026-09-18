@@ -6,7 +6,7 @@ The Relay Registry is the on-chain directory through which the Meshline network 
 
 The current Neo N3 relay registry contract is named `MeshlineRegistry`. The remainder of this document calls it the Registry.
 
-This protocol defines the Registry data structures, public ABI, and observable behavior required for Meshline Protocol 1.0 interoperability. A concrete contract may additionally expose implementation interfaces for deployment lifecycle, contract verification, upgrades, governance, payment callbacks, or events. Unless listed in this protocol, those interfaces are not part of the ABI that other compatible Registry implementations MUST provide. The complete ABI of the repository's reference contract is documented in [Meshline.Contracts](https://meshline.org/en/resources#reference-contract).
+This protocol defines the Registry data structures, public ABI, and observable behavior required for Meshline Protocol 1.0 interoperability. A concrete contract may additionally expose implementation interfaces for deployment lifecycle, contract verification, upgrades, governance, payment callbacks, or events. Unless listed in this protocol, those interfaces are not part of the ABI that other compatible Registry implementations MUST provide. For the Neo N3 reference contract, see the [contract repository](https://github.com/meshline-network/contracts) for source code and the [ABI documentation](https://github.com/meshline-network/contracts/blob/main/docs/abi.md) for the complete interface reference.
 
 Account routing is provided by the signed documents and DHT defined in [AccountRoute and the relay resource DHT](../relay-dht/core-objects.md#accountroute); the Registry handles only the public-relay membership directory.
 

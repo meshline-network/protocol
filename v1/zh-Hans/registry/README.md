@@ -6,7 +6,7 @@
 
 当前 Neo N3 中继注册表合约名为 `MeshlineRegistry`。本文后续简称其为 Registry。
 
-本协议定义 Meshline Protocol 1.0 互操作所需的 Registry 数据结构、公开 ABI 和可观察行为。具体合约可以另外公开部署生命周期、合约验证、升级、治理、付款回调或事件等实现接口；除非这些接口也在本协议列出，否则它们不构成其他兼容 Registry 实现必须提供的 ABI。仓库参考合约的完整 ABI 见 [Meshline.Contracts](https://meshline.org/resources#reference-contract)。
+本协议定义 Meshline Protocol 1.0 互操作所需的 Registry 数据结构、公开 ABI 和可观察行为。具体合约可以另外公开部署生命周期、合约验证、升级、治理、付款回调或事件等实现接口；除非这些接口也在本协议列出，否则它们不构成其他兼容 Registry 实现必须提供的 ABI。Neo N3 参考合约的源码见[合约仓库](https://github.com/meshline-network/contracts)，完整接口说明见 [ABI 文档](https://github.com/meshline-network/contracts/blob/main/docs/abi.md)。
 
 账户路由由[AccountRoute 与中继资源 DHT](../relay-dht/core-objects.md#accountroute)定义的签名文档和 DHT 提供；Registry 只负责公共中继成员目录。
 

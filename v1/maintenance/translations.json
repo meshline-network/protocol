@@ -240,9 +240,9 @@
       "reviewedAt": "2026-09-17"
     },
     "registry/README.md": {
-      "sourceSha256": "6cfec7f1b674acca83f48a1121bd348460fcf1bdedc7294edd6aff30a2440d70",
-      "translationSha256": "ed8c54131e01323f6e581b08304338792632c8da096d1cb0d2f69a060f1f3bea",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "a2b8f626a3763de02191ad05ee8e501213dae94552ad82bcf5b8f45fa661efbc",
+      "translationSha256": "8eab41443a7f5409a0b7e0eb7ab514d619f394c38d2727701a2db3ec76d80b0e",
+      "reviewedAt": "2026-09-18"
     },
     "relay-dht/concepts/account-route-lifecycle.md": {
       "sourceSha256": "c32045aa771c35f25e462f4b9f30f9ad93f77e63f58dee2b9ff5f73b274e65ed",
