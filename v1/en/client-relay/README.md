@@ -2,8 +2,6 @@
 
 [Meshline Protocol 1.0](../README.md)
 
-Protocol identifier and HTTP base path: `/meshline/v1`
-
 Meshline clients use this protocol through HTTPS or WSS endpoints verified against the Registry and `RelayDescriptor`. Every public relay provides the base module. Channel and group hosting are optional modules sharing the same transport, sessions, errors, and method namespace.
 
 WebSocket follows [RFC 6455](https://www.rfc-editor.org/rfc/rfc6455); WSS methods and notifications use [JSON-RPC 2.0](https://www.jsonrpc.org/specification) envelopes. For shared encoding and signing inputs, see the [General protocol rules](../general.md).

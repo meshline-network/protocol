@@ -8,7 +8,7 @@
 
 1. 从可信配置取得[网络上下文](../../general.md#网络上下文)；
 2. 按[Registry 查询](../../registry/methods.md#getrelay)通过 `listRelays()` 获取候选记录，或通过 `getRelay` 查询已知 `relay_id` 的记录；仅将 `status` 为 `active` 的记录作为候选；
-3. 确认 `endpoint` 满足 [Registry 入口约束](../../registry/core-objects.md#relayentry)，从 `<endpoint>/relay/descriptor` 获取 `RelayDescriptor`；
+3. 确认 `endpoint` 满足 [Registry 入口约束](../../registry/core-objects.md#relayentry)，从 `endpoint` 下的 `relay/descriptor` 获取 `RelayDescriptor`；
 4. 确认描述符的 `relay_id` 与所选 Registry 记录一致，再按 `RelayDescriptor` 的[验证规则](../core-objects/relay-descriptor.md#中继描述符验证规则)验证描述符；
 5. 只向验证成功且确实提供所需服务或功能的中继发起对应请求；使用可选能力时，还必须确认 `RelayDescriptor` 的 `capabilities` 包含相应能力声明。
 

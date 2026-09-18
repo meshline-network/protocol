@@ -13,6 +13,6 @@
 | 字段 | 逻辑类型 | 必需 | 语义与约束 |
 |---|---|---|---|
 | `relay_id` | UInt160 | 是 | 中继的链上身份；转换为协议文本时使用[中继 ID](#中继-id)定义的格式 |
-| `endpoint` | string | 是 | 规范 HTTPS `/meshline/v1` 基地址；必须以 `https://` 开头、以 `/meshline/v1` 结尾，字段值的 UTF-8 编码不得超过 512 bytes，且不得包含空白、query、fragment、userinfo 或反斜杠 |
+| `endpoint` | string | 是 | 规范 HTTPS 基地址；必须以 `https://` 开头，字段值的 UTF-8 编码不得超过 512 bytes，且不得包含空白、query、fragment、userinfo 或反斜杠 |
 | `status` | string | 是 | 本条 Registry 中继成员资格的当前状态：`active` 表示该中继可作为候选公共中继，`disabled` 表示运营者已停用该资格，`suspended` 表示 Registry 治理方已暂停该资格；后两者均不得作为候选中继 |
 | `updated_at` | unsigned integer | 是 | 最近一次创建、端点更新或状态更新的 UTC Unix 毫秒 |

@@ -13,6 +13,6 @@
 | Field | Logical type | Required | Semantics and constraints |
 |---|---|---|---|
 | `relay_id` | UInt160 | Yes | The relay's on-chain identity; when converted to protocol text, use the format defined by [Relay ID](#relay-id) |
-| `endpoint` | string | Yes | Canonical HTTPS `/meshline/v1` base address; MUST begin with `https://` and end with `/meshline/v1`; its UTF-8 encoding MUST NOT exceed 512 bytes and MUST NOT contain whitespace, a query, fragment, userinfo, or backslash |
+| `endpoint` | string | Yes | Canonical HTTPS base address; MUST begin with `https://`; its UTF-8 encoding MUST NOT exceed 512 bytes and MUST NOT contain whitespace, a query, fragment, userinfo, or backslash |
 | `status` | string | Yes | Current Registry membership status: `active` means the relay may be used as a candidate public relay; `disabled` means the operator has disabled membership; `suspended` means Registry governance has suspended membership. Neither of the latter two states permits use as a candidate relay |
 | `updated_at` | unsigned integer | Yes | UTC Unix milliseconds of the most recent creation, endpoint update, or status update |

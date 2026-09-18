@@ -50,9 +50,9 @@
       "reviewedAt": "2026-09-17"
     },
     "client-relay/concepts/discovery-and-sessions.md": {
-      "sourceSha256": "de4be9bb4e80198ab9e9e0170a04afe8103e7868672d15aa62bcbdd572971de9",
-      "translationSha256": "394737f1df13ec043023932037fa1272f41331957fe8edd440e073057f6bc251",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "4a46e61d838737e683bf5e9b1d2769db7d3979c9f84d674c818e30c535f09e61",
+      "translationSha256": "4d4018c0d654be22e458d7ea6cdc550906065325eb9c9c29cd1d17c905192d9a",
+      "reviewedAt": "2026-09-18"
     },
     "client-relay/concepts/message-delivery.md": {
       "sourceSha256": "605ff7a39acc3a49d57955b00d6613953d54fe2eafc9bac57d0d679a172aa9c6",
@@ -85,9 +85,9 @@
       "reviewedAt": "2026-09-17"
     },
     "client-relay/core-objects/relay-descriptor.md": {
-      "sourceSha256": "fafc8e22521a1cbca36956329141629d522df8b7f1743906a77097144e7f831d",
-      "translationSha256": "bd93989542c9105c45bcfd3324e4d33333bcb82c5b6520cc765feb232b3a81a8",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "beb42a7f511d486bcc842571d1da9515174fbc35b706c94608521903da394eeb",
+      "translationSha256": "14dbd4318af1464aaef7d4a0bd3bb4f824286132ca2aab3f2cc295ab00fcf2f2",
+      "reviewedAt": "2026-09-18"
     },
     "client-relay/groups/concepts/account-sync.md": {
       "sourceSha256": "6a4d391910531ff181569a3ccf5f29cec36597e157db65200ac675ca93743cb2",
@@ -185,9 +185,9 @@
       "reviewedAt": "2026-09-17"
     },
     "client-relay/methods/conventions.md": {
-      "sourceSha256": "63bd054bfed06dcbc9ef38682f781526db070636a3a6d585bf3ca45697876120",
-      "translationSha256": "218866c058f4e1fb04871d57b581929178103297962ec7c74ea66849f9f364f3",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "cc2e32ac0359f985a6de6852d8c50d12654d047aa6695635e3867080b7b7a480",
+      "translationSha256": "4e177f19c28c5778cf9fa74781891f407620c56505005a285e644b6033560a42",
+      "reviewedAt": "2026-09-18"
     },
     "client-relay/methods/device-state.md": {
       "sourceSha256": "aa23289db480363faf0adf871bc35476839ba699b5517c3a261565e40ceca88c",
@@ -215,9 +215,9 @@
       "reviewedAt": "2026-09-17"
     },
     "client-relay/README.md": {
-      "sourceSha256": "24366583953e553c66b857d28d9cab540454073f4e8f0ea8dfc74a34b39179bd",
-      "translationSha256": "458d8d828f07a95192660bf67df6e5d71e4a9d1c99c1b7948bf62df0493792f3",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "f5facad8719e47ba7254c15da98d293da9e6aab08aac1e79cc3a1f6e640bcc2e",
+      "translationSha256": "25197d4d364f6cfbdbfcc013cb04cc7a20d67e12668fedde67c91154bbbd8cb9",
+      "reviewedAt": "2026-09-18"
     },
     "general.md": {
       "sourceSha256": "44997b29ab1e91352844e745f0ff9e0c32d48215bdb934666139357d2fa2c3bb",
@@ -230,9 +230,9 @@
       "reviewedAt": "2026-09-17"
     },
     "registry/core-objects.md": {
-      "sourceSha256": "dee14bdbc3de75beecd64a9d0ca08ad49c0f1e943ac0fbf2c43458792e085d37",
-      "translationSha256": "b1642d11255855f9446c3371d766f3fa411b211701efbbcfc5ec16c0c1a768d7",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "68a801dbaf8855ced30441efff24138a92f76b7bda2dd409a575684cfaf8d135",
+      "translationSha256": "e9cd6852212393a9128f811c5dcc035f3f39b58a462fc4becf86e80d79dd12fd",
+      "reviewedAt": "2026-09-18"
     },
     "registry/methods.md": {
       "sourceSha256": "7ac3ee6db442f8b7d5ea6bf1da9c5aa8807ba110f7f2c257cccbb158c7ec8580",

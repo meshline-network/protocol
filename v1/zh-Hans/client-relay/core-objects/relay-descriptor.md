@@ -57,8 +57,8 @@ Peer ID 由中继的 libp2p Peer 公钥按 libp2p 规范派生，用于标识安
 
 | 地址格式 | 用途 |
 |---|---|
-| `https://.../meshline/v1` | 公共客户端 HTTP API 基地址 |
-| `wss://.../meshline/v1` | 公共中继提供的客户端 WebSocket 完整连接地址 |
+| `https://...` | 公共客户端 HTTP API 基地址 |
+| `wss://...` | 公共中继提供的客户端 WebSocket 完整连接地址 |
 | 包含 `/tcp/` 和 `/p2p/<peer-id>` 的 libp2p multiaddr | 中继间连接 |
 
 公共中继必须提供至少一个 HTTPS 地址和一个 libp2p TCP multiaddr。存在 WSS 地址表示中继完整提供[WebSocket JSON-RPC](../methods/conventions.md#websocket-json-rpc)的客户端 WebSocket 传输与通知机制；没有 WSS 地址表示该机制不可用。

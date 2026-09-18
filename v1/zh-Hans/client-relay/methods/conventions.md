@@ -4,7 +4,7 @@
 
 ## 端点与认证
 
-建立连接时，客户端必须根据 `relay_id` 按[中继发现](../concepts/discovery-and-sessions.md#中继发现)规则取得并验证当前 `RelayDescriptor`，再按[中继端点地址](../core-objects/relay-descriptor.md#中继端点地址)规定选择地址；以前取得的 URL 不具有持续权威性。客户端使用 HTTPS 地址调用以 `/meshline/v1` 为基础路径的 HTTP API；存在 WSS 地址时，还可以使用 WebSocket API。使用频道或群组托管服务前，客户端必须确认有效 `RelayDescriptor` 声明了相应的 `channel.host.v1` 或 `group.host.v1` 能力。
+建立连接时，客户端必须根据 `relay_id` 按[中继发现](../concepts/discovery-and-sessions.md#中继发现)规则取得并验证当前 `RelayDescriptor`，再按[中继端点地址](../core-objects/relay-descriptor.md#中继端点地址)规定选择地址；以前取得的 URL 不具有持续权威性。客户端使用所选 HTTPS 基地址调用 HTTP API；存在 WSS 地址时，还可以使用 WebSocket API。使用频道或群组托管服务前，客户端必须确认有效 `RelayDescriptor` 声明了相应的 `channel.host.v1` 或 `group.host.v1` 能力。
 
 通过 HTTP 调用需要会话的方法时，必须在 `X-Meshline-Session` 请求头中携带 `token`；通过 WebSocket 调用时，使用当前连接经认证绑定的会话。每个会话只对建立它的中继 origin、账户和会话模式有效；设备会话还绑定设备 ID。客户端不得把会话令牌发送给另一个 origin，即使两个地址属于同一中继。设备会话确认[调用账户与调用设备](../concepts/roles-and-routing.md#角色)，账户会话只确认调用账户，不能满足要求调用设备身份的方法。
 
@@ -14,7 +14,9 @@
 
 ### 方法路径
 
-HTTP 请求地址在 `RelayDescriptor` 所列的完整 HTTPS 基地址后追加 `/` 和将点分方法名中的 `.` 替换为 `/` 所得路径，各段保持大小写不变。不含部署前缀时，`relay.info` 对应 `GET /meshline/v1/relay/info`，`channel.post.edit` 对应 `PATCH /meshline/v1/channel/post/edit`。
+HTTP 请求地址由 `RelayDescriptor` 所列的 HTTPS 基地址与方法路径组成。方法路径由点分方法名中的 `.` 替换为 `/` 得到，各段保持大小写不变。
+
+例如，基地址为 `https://relay.example.com/meshline/v1` 时，`relay.info` 对应 `GET https://relay.example.com/meshline/v1/relay/info`。
 
 WSS 直接连接 `RelayDescriptor` 所列的完整 WSS 地址，不追加方法路径；方法名放在 JSON-RPC 请求中。WebSocket 和中继 RPC 的方法名仍使用点分形式。
 

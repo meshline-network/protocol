@@ -4,7 +4,7 @@
 
 ## Endpoints and Authentication
 
-When connecting, clients MUST obtain and verify the current `RelayDescriptor` by `relay_id` under [Relay discovery](../concepts/discovery-and-sessions.md#relay-discovery), then select an address under [Relay endpoint addresses](../core-objects/relay-descriptor.md#relay-endpoint-addresses). Previously obtained URLs have no continuing authority. Clients use HTTPS addresses for the HTTP API based at `/meshline/v1`; a WSS address additionally enables the WebSocket API. Before using channel or group hosting, clients MUST confirm that a valid descriptor declares `channel.host.v1` or `group.host.v1`, respectively.
+When connecting, clients MUST obtain and verify the current `RelayDescriptor` by `relay_id` under [Relay discovery](../concepts/discovery-and-sessions.md#relay-discovery), then select an address under [Relay endpoint addresses](../core-objects/relay-descriptor.md#relay-endpoint-addresses). Previously obtained URLs have no continuing authority. Clients use the selected HTTPS base address for the HTTP API; a WSS address additionally enables the WebSocket API. Before using channel or group hosting, clients MUST confirm that a valid descriptor declares `channel.host.v1` or `group.host.v1`, respectively.
 
 HTTP calls requiring a session MUST carry `token` in the `X-Meshline-Session` header. WebSocket calls use the authenticated session bound to that connection. Each session is valid only for the establishing relay origin, account, and session mode; device sessions also bind a device ID. Clients MUST NOT send tokens to another origin, even if both addresses belong to the same relay. Device sessions confirm the [calling account and device](../concepts/roles-and-routing.md#roles); account sessions confirm only the account and cannot satisfy methods requiring calling-device identity.
 
@@ -14,7 +14,9 @@ Clients MUST NOT participate directly in the relay DHT or use unverified relay a
 
 ### Method Paths
 
-Construct HTTP request URLs by appending `/` and the dot-separated method name with each `.` replaced by `/` to the complete HTTPS base address in `RelayDescriptor`, preserving case in every segment. Without a deployment prefix, `relay.info` maps to `GET /meshline/v1/relay/info`, and `channel.post.edit` to `PATCH /meshline/v1/channel/post/edit`.
+HTTP request URLs combine the HTTPS base address listed in `RelayDescriptor` with the method path. The method path replaces each `.` in the dot-separated method name with `/`, preserving case in every segment.
+
+For example, with base address `https://relay.example.com/meshline/v1`, `relay.info` maps to `GET https://relay.example.com/meshline/v1/relay/info`.
 
 WSS connects directly to the complete listed WSS address without a method path; the method name goes in the JSON-RPC request. WebSocket and relay RPC retain dot-separated method names.
 

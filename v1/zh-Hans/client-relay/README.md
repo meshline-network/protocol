@@ -2,8 +2,6 @@
 
 [Meshline Protocol 1.0](../README.md)
 
-协议标识与 HTTP 基路径：`/meshline/v1`
-
 Meshline 客户端通过经 Registry 与 `RelayDescriptor` 验证的 HTTPS 或 WSS endpoint 使用本协议。基础模块由所有公共中继提供；频道和群组托管是共享同一传输、会话、错误和方法命名空间的可选模块。
 
 WebSocket 按 [RFC 6455](https://www.rfc-editor.org/rfc/rfc6455) 执行；WSS 方法与通知封装按 [JSON-RPC 2.0](https://www.jsonrpc.org/specification) 执行。公共编码和签名输入见[协议总则](../general.md)。

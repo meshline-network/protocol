@@ -57,8 +57,8 @@ This protocol defines the following dialable address formats, each of which also
 
 | Address format | Purpose |
 |---|---|
-| `https://.../meshline/v1` | Base address for the public client HTTP API |
-| `wss://.../meshline/v1` | Complete client WebSocket connection address provided by a public relay |
+| `https://...` | Base address for the public client HTTP API |
+| `wss://...` | Complete client WebSocket connection address provided by a public relay |
 | libp2p multiaddr containing `/tcp/` and `/p2p/<peer-id>` | Inter-relay connections |
 
 A public relay MUST provide at least one HTTPS address and one libp2p TCP multiaddr. A WSS address indicates complete support for the client WebSocket transport and notifications under [WebSocket JSON-RPC](../methods/conventions.md#websocket-json-rpc); without one, that mechanism is unavailable.

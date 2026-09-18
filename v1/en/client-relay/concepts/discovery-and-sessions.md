@@ -8,7 +8,7 @@ A client or relay discovering public relays through the Registry MUST:
 
 1. Obtain the [network context](../../general.md#network-context) from trusted configuration.
 2. Use `listRelays()` to obtain candidate records or `getRelay` to query a known `relay_id`, following [Registry queries](../../registry/methods.md#getrelay). Consider only records whose `status` is `active`.
-3. Confirm that `endpoint` meets the [Registry entry constraints](../../registry/core-objects.md#relayentry), then retrieve `RelayDescriptor` from `<endpoint>/relay/descriptor`.
+3. Confirm that `endpoint` meets the [Registry entry constraints](../../registry/core-objects.md#relayentry), then retrieve `RelayDescriptor` from `relay/descriptor` under `endpoint`.
 4. Confirm that the descriptor's `relay_id` matches the selected Registry record, then validate it under the [RelayDescriptor validation rules](../core-objects/relay-descriptor.md#relay-descriptor-validation-rules).
 5. Send requests only to successfully verified relays that actually provide the required service or function. When using an optional capability, also confirm that `RelayDescriptor.capabilities` includes its declaration.
 
