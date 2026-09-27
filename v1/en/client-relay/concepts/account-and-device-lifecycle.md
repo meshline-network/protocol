@@ -29,7 +29,7 @@ Unexpected device loss may temporarily invalidate contact grants endorsed only b
 
 ### Migration Preparation and Steps
 
-Before migration, the client should complete a round of message timeline synchronization on the old relay where possible, retaining fully processed records and their synchronization position. An unreachable old relay or failed synchronization does not prevent migration; account authorization, device state, route revision, and other requirements still apply.
+Before migration, the client should complete a round of message timeline synchronization on the old relay where possible. An unreachable old relay or failed synchronization does not prevent migration; account authorization, device state, route revision, and other requirements still apply.
 
 When changing an account's home relay, the following MUST be done:
 
@@ -57,7 +57,7 @@ A local task accepted only on the sending side, but not yet on the receiving sid
 
 ### Timeline Synchronization and Historical Catch-Up
 
-Message timelines are not copied during account migration. Clients track the [synchronization position](../methods/messaging.md#messagetimelinesync) separately by account and relay: continue from the largest sequence among fully processed records on the currently connected relay, or use `-1` or omit `after` if there are none. Other devices coming online later follow the same rules to read messages still retained and visible to them.
+Message timelines are not copied during account migration. Clients continue reading from the [synchronization position](message-timeline.md#message-timeline-processing-flow) for the corresponding account on each relay. Other devices coming online later follow the same rules to read messages still retained and visible to them.
 
 After migration, the old relay MUST still provide [`message.timeline.sync`](../methods/messaging.md#messagetimelinesync) to clients with valid device sessions on that relay, returning records within their original device visibility and remaining retention periods, including records appended after the last pre-migration synchronization. It MUST NOT forward the request or return `route_stale` or `target_not_local` solely because the account migrated. Migration does not make invisible records readable; expired records follow the [history-gap rules](message-timeline.md#message-retention-and-history-gaps). Device-session establishment and invalidation still follow the [authentication and session rules](../methods/authentication-and-sessions.md#session-authentication).
 

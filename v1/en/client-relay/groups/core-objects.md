@@ -31,7 +31,7 @@ group_id = "grp_" + base64url(first_16_bytes(SHA-256(network_bound_json_bytes(gr
 |---|---|---|---|
 | `group_id` | string | Yes | Group described by this state |
 | `name` | string | Yes | Current name; MUST include a non-[whitespace character](../../general.md#text-whitespace-characters); at most 256 UTF-8 bytes |
-| `description` | string | Yes | Current description; if nonempty, MUST NOT be solely [whitespace](../../general.md#text-whitespace-characters); at most 4 KiB (4,096 UTF-8 bytes) |
+| `description` | string | No | Current description; omission means no description; if nonempty, MUST NOT be solely [whitespace](../../general.md#text-whitespace-characters); at most 4 KiB (4,096 UTF-8 bytes) |
 | `status` | string | Yes | `active` means existing; `closed` means permanently closed |
 | `owner` | string | Yes | Owner account, appearing exactly once in current membership with role `owner` |
 | `member_capacity` | integer | Yes | Positive member-count limit; may temporarily be below current count, retaining existing members but rejecting further admission |

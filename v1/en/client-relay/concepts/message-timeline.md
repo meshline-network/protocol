@@ -17,7 +17,7 @@ A sequence denotes a record position for an account on this relay and is not com
 
 The timeline provides cross-device synchronization within the retention period, not permanent chat storage. Messages and protocol state persisted by clients are the long-term record.
 
-Across all relays, clients still deduplicate using the envelope's `(from, message_id)`, complete envelope digest, and corresponding key box: identical keys with identical content are applied only once; the same key with different content MUST be recognized as a conflict and rejected for duplicate application.
+Across all relays, clients deduplicate by the envelope's `(from, message_id)`. The first accepted message MUST pass validation. Subsequent records with the same logical message key MUST be ignored; they MUST NOT overwrite accepted content or be applied again.
 
 ## `MessageTimelineEntry`
 
@@ -52,25 +52,10 @@ After cleaning up expired records, the relay MUST still correctly determine hist
 
 ## Message Timeline Processing Flow
 
-### Record Validation and Decryption
-
 The client MUST validate this page's `certificates` array under the response constraints of [`message.timeline.sync`](../methods/messaging.md#messagetimelinesync), and validate each record's envelope under [`MessageEnvelope`](../core-objects/messages-and-content.md#messageenvelope). It then confirms that `key_box.device_id` matches the current device ID and uses that `key_box` to unwrap the content key and authenticate and decrypt the payload under [End-to-end encryption construction](../core-objects/messages-and-content.md#end-to-end-encryption-construction).
 
-Records from other accounts MUST additionally validate the sender relationship or the authorization material carried by the business object itself. Records sent to other accounts MUST confirm that the sender is the local account. Account self-delivery MUST confirm that both envelope endpoints are the local account.
+Before applying business content from other accounts, clients MUST additionally validate the sender relationship or the authorization material carried by the business object itself. Records sent to other accounts MUST confirm that the sender is the local account. Account self-delivery MUST confirm that both envelope endpoints are the local account.
 
-### Business Processing Results
+State changes within each business domain MUST take effect in the corresponding relay's sequence order. Unknown business `$type` values MAY be saved or ignored; invalid business content or content that fails authorization validation MUST NOT be applied.
 
-Business state changes caused by returned synchronization entries MUST take effect in sequence order. A client may advance its synchronization position past an entry only after completing its processing under this protocol. The result MUST be one of:
-
-- Applied.
-- Deduplicated by logical message key.
-- An unknown business `$type` has been saved or explicitly ignored.
-- An invalid record or local conflict has been rejected under the applicable rules.
-
-If dependencies are temporarily unavailable or the result is still undetermined, advancement MUST stop; the client MUST NOT skip the entry and save a larger position.
-
-### Advancing the Synchronization Position
-
-Clients track synchronization progress separately for each account and relay, using the largest sequence among records whose processing on that relay has completed, or `-1` if there are no such records.
-
-Clients may update the position one record at a time or in batches. Failure to process later entries does not invalidate earlier completed results or their progress, but the position MUST NOT pass an unfinished entry. When reloading local state, the position MUST remain consistent with its processing results. Empty pages do not change synchronization progress.
+The synchronization position is scoped to an account and relay and is supplied as the `after` parameter of [`message.timeline.sync`](../methods/messaging.md#messagetimelinesync). After validating a response, clients MAY continue synchronization using the largest sequence in that page; before synchronization begins, use `-1` or omit `after`. Empty pages do not change the synchronization position.

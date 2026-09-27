@@ -21,7 +21,7 @@ The owner changes name, description, member capacity, or invitation policy.
 | `group_id` | string | Yes | Group to update, still active |
 | `prev_hash` | string | Yes | Previous [administration digest](../core-objects.md#participating-events-and-predecessor-references), still current at submission |
 | `name` | string | No | Replaces the name if present; MUST include a non-[whitespace character](../../../general.md#text-whitespace-characters), at most 256 UTF-8 bytes; omission preserves it |
-| `description` | string | No | Replaces description if present; if nonempty, not solely [whitespace](../../../general.md#text-whitespace-characters), at most 4,096 UTF-8 bytes; omission preserves it |
+| `description` | string | No | Replaces the current description if present; if nonempty, MUST NOT consist solely of [whitespace](../../../general.md#text-whitespace-characters) and MUST be at most 4,096 UTF-8 bytes; omission preserves it |
 | `member_capacity` | integer | No | Replaces capacity if present; positive. Increases cannot exceed current relay `max_group_members`; retaining/reducing existing capacity is not constrained by a subsequently reduced cap; omission preserves it |
 | `invite_policy` | string | No | Replaces policy if present, with values from [`GroupState.invite_policy`](../core-objects.md#groupstate); omission preserves it |
 | `device_signature` | string | Yes | Current owner's calling device signs the complete update excluding this field |

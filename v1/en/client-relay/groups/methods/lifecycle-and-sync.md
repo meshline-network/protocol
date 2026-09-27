@@ -54,7 +54,7 @@ Invalid fixed values, group ID derivation, name, description, capacity, invitati
 
 On success, the relay creates the member record and the creator device's access interval from the initial owner information in the creation object, fixes the declared client-secret commitment as the group's current commitment, generates the epoch 0 relay secret, saves the initial owner's member public key, the creation event's verification certificate, the epoch 0 key entry, and the initial owner's client-secret box, and atomically appends the sequence 0 creation event.
 
-The relay and clients initialize `GroupState.description` from the creation event: an omitted or `""` `GroupCreate.description` becomes an empty string, and a valid nonempty value is preserved unchanged. Signature inputs, management-chain digests, and event bodies MUST preserve the distinction between an omitted field and an explicit empty string; fields MUST NOT be inserted or removed before signature verification or digest computation.
+Signature inputs, management-chain digests, and event bodies MUST preserve the distinction between an omitted field and an explicit empty string; fields MUST NOT be inserted or removed before signature verification or digest computation.
 
 ## `group.resolve`
 

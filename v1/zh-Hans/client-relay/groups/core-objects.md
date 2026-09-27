@@ -31,7 +31,7 @@ group_id = "grp_" + base64url(first_16_bytes(SHA-256(network_bound_json_bytes(gr
 |---|---|---|---|
 | `group_id` | string | 是 | 当前状态所描述的群 ID |
 | `name` | string | 是 | 当前群的名称；必须至少包含一个非[空白字符](../../general.md#文本空白字符)，UTF-8 编码后最多 256 bytes |
-| `description` | string | 是 | 当前群的简介；非空时不得仅包含[空白字符](../../general.md#文本空白字符)，UTF-8 编码后最多 4 KiB（4,096 bytes） |
+| `description` | string | 否 | 当前群的简介；省略表示没有简介；非空时不得仅包含[空白字符](../../general.md#文本空白字符)，UTF-8 编码后最多 4 KiB（4,096 bytes） |
 | `status` | string | 是 | 群的生命周期状态：`active` 表示群仍在存续；`closed` 表示群已永久关闭 |
 | `owner` | string | 是 | 群主账户；必须在当前成员投影中恰好出现一次，且对应角色必须为 `owner` |
 | `member_capacity` | integer | 是 | 该群的成员数上限，必须为正；可以暂时小于成员数，此时保留现有成员但拒绝继续准入 |

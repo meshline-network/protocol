@@ -40,9 +40,9 @@
       "reviewedAt": "2026-09-17"
     },
     "client-relay/concepts/account-and-device-lifecycle.md": {
-      "sourceSha256": "e68cb361abe1dd4fe53fbdefbbe7f02af662af37d3ce09a88d946d6e0543228b",
-      "translationSha256": "a54f6a6f95349e15de364a67709fec54b1e39ddc5330bf2a7939729bec45713c",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "04e0b627803345cc412b930042a54259bf323c8f7e3d585073bf64a6a62d98e5",
+      "translationSha256": "137839ea0c2d529197378da0490d77eb4dfdcf3c550dbe059854450ef8fa8eb2",
+      "reviewedAt": "2026-09-25"
     },
     "client-relay/concepts/contacts.md": {
       "sourceSha256": "bb7848602a24c1d527b19c9ebb45715e09b827fc41e40885223bd34657c55fe6",
@@ -60,9 +60,9 @@
       "reviewedAt": "2026-09-17"
     },
     "client-relay/concepts/message-timeline.md": {
-      "sourceSha256": "1202023f8de0898a54c5f9a51da47ecb28063d18c0d0070fc924268dd444afb0",
-      "translationSha256": "ecbc7bc175c94622291414ba252b6e994b219390688c7eba82a463686f47e6df",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "6f8e2d6abc4b58878fbcb4c879f8a4105fc332e5824e38749b10bbceda2ff4eb",
+      "translationSha256": "bcf898ffa6412983754c3ebf54ec55b53138b6c78021a38a564afc421fbe5289",
+      "reviewedAt": "2026-09-25"
     },
     "client-relay/concepts/roles-and-routing.md": {
       "sourceSha256": "9566ea18ca56f54623af0a3bb26872331cf485b18ff8c67ea23f5efbe76556eb",
@@ -115,9 +115,9 @@
       "reviewedAt": "2026-09-17"
     },
     "client-relay/groups/core-objects.md": {
-      "sourceSha256": "528d257b0d04613ecb565fef473a9a371b8eb8b85b1a553bf05e2adfe3048d33",
-      "translationSha256": "0b4e7801a454fa1120f4ec44b93e1fde6f4260dedb21587f1f0f6ef5c0729aa4",
-      "reviewedAt": "2026-09-18"
+      "sourceSha256": "54cff2760d6593f70ff2004d7dbf0e439d3945095a8c8a8ef53b6746a9752276",
+      "translationSha256": "3709b38184f985fc711ef8de2f0d23b2b2a54b9b25844fcd907b93f3ff9d2886",
+      "reviewedAt": "2026-09-25"
     },
     "client-relay/groups/methods/admission.md": {
       "sourceSha256": "45c0c0e98cbc1a0cd3e7473a2ded4a5f92141827c4f0ac3923ffd5a04788ebcf",
@@ -135,9 +135,9 @@
       "reviewedAt": "2026-09-17"
     },
     "client-relay/groups/methods/lifecycle-and-sync.md": {
-      "sourceSha256": "45e159adaa2f21b9bbeecf21e570e02f7a1d71e3cb10e0e46e45dea721fef145",
-      "translationSha256": "042d8c4ee9ee2ea72e19fc51e727e4d0a0e96cfc762c6c232fc7eb4df42ac600",
-      "reviewedAt": "2026-09-17"
+      "sourceSha256": "eb18d604993cea2456e3ce921dd0b11fb55c587b232f79da41f51fef8879487c",
+      "translationSha256": "2feb3d73784433e861591502c78b98f8d07ab8fad50a8070ff21cc265061a966",
+      "reviewedAt": "2026-09-25"
     },
     "client-relay/groups/methods/member-recovery.md": {
       "sourceSha256": "2a9d39043da1bab1cee0fd186be3e80d988b6b153c6f0f97061afb8f508d4ea7",
@@ -156,8 +156,8 @@
     },
     "client-relay/groups/methods/properties-and-roles.md": {
       "sourceSha256": "340dbb5dbdafb46c4ded8fa9cf90d4e24d4444df64f9c280261bb8ef91070c6e",
-      "translationSha256": "290e0ea437c5eeea59794c0b42ee0847c77c8789646a4748491b6410de486040",
-      "reviewedAt": "2026-09-17"
+      "translationSha256": "bd3039e29c82d214e0637ba934bbe3bb7daade783f3ce78ecbbe7078d117df2d",
+      "reviewedAt": "2026-09-25"
     },
     "client-relay/groups/methods/subscription.md": {
       "sourceSha256": "8a72cc1472902736faabf6409cb1b1f9bb6da1d7ce0c7d2837f835e5c45cee94",
