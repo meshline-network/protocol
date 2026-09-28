@@ -29,15 +29,16 @@ Start with the [English specification](v1/en/README.md), browse the [online read
 
 For a first implementation, read the general conventions before the relevant protocol sections. Use the test vectors to check encoding and cryptographic operations against the specification.
 
+## SDK and reference contracts
+
+Use the [Meshline SDKs](https://github.com/meshline-network/sdk) to integrate Meshline into an application. The SDK repository provides available implementations, installation instructions, examples, and their supported capabilities.
+
+The [Registry reference contracts](https://github.com/meshline-network/contracts) provide the Neo N3 implementation, ABI documentation, and deployment instructions. Find these entry points together on the [developer resources page](https://meshline.org/en/resources).
+
+Implementations should use the specification and shared test vectors as their interoperability reference.
+
 ## Contributing
 
 Issues and pull requests are welcome for specification clarifications, interoperability problems, and improvement proposals. Describe the affected protocol section, the behavior you observed or propose, and a reproducible example where possible.
-
-To validate a local checkout, install Node.js 22.13.0 or later and run:
-
-```sh
-npm ci
-npm test
-```
 
 See the [maintenance guide](v1/maintenance/README.md) for repository language conventions, translation reviews, validation details, and downstream synchronization.

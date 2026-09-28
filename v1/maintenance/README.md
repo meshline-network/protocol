@@ -26,6 +26,13 @@ npm run review -- --vectors
 
 ## Validation
 
+Install Node.js 22.13.0 or later and run from the repository root:
+
+```sh
+npm ci
+npm test
+```
+
 `npm test` checks local Markdown links and heading anchors, JSON files and examples, translation records, and the structural consistency of current translations. It reports stale translations explicitly. `npm run check:current` also requires all translations and shared test-vector review records to be current. Validation does not update review records.
 
 If either a Chinese document or its translation changes, the English page displays a pending-update notice and the last review date. Changes to shared JSON mark the English pages with a test-data update notice. Missing translations produce an English explanation and a link to the Chinese source. Corrupted snapshots, broken links, orphaned translations, and incomplete review records are structural errors.
